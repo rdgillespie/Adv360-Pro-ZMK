@@ -38,19 +38,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_LBRC_3: mod_LBRC_3 {
+        mod_LP_3: mod_LP_3 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_LBRC_3";
-            bindings = <&kp LEFT_BRACE>, <&kp N3>;
+            label = "MOD_LP_3";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp N3>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_LP_4: mod_LP_4 {
+        mod_LBRC_4: mod_LBRC_4 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_LP_4";
-            bindings = <&kp LEFT_PARENTHESIS>, <&kp NUMBER_4>;
+            label = "MOD_LBRC_4";
+            bindings = <&kp LEFT_BRACE>, <&kp NUMBER_4>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -74,19 +74,19 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_RP_7: mod_RP_7 {
+        mod_RBRC_7: mod_RBRC_7 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_RP_7";
-            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N7>;
+            label = "MOD_RBRC_7";
+            bindings = <&kp RIGHT_BRACE>, <&kp N7>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mod_RBRC_8: mod_RBRC_8 {
+        mod_RP_8: mod_RP_8 {
             compatible = "zmk,behavior-mod-morph";
-            label = "MOD_RBRC_8";
-            bindings = <&kp RIGHT_BRACE>, <&kp N8>;
+            label = "MOD_RP_8";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp N8>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -135,11 +135,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LBRC_3  &mod_LP_4  &mod_Hash_5  &none                                                            &mo 2              &mod_Amp_6  &mod_RP_7  &mod_RBRC_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
-&kp TAB    &kp Q        &kp W        &kp E        &kp R      &kp T        &none                                                            &none              &kp Y       &kp U      &kp I        &kp O        &kp P          &kp BSLH
-&kp ESC    &kp A        &kp S        &kp D        &kp F      &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J      &kp K        &kp L        &kp SEMI       &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C        &kp V      &kp B                                     &kp HOME      &kp PG_UP                                &kp N       &kp M      &kp COMMA    &kp DOT      &kp FSLH       &kp RSHFT
-&mo 1      &kp GRAVE    &none        &kp LEFT     &kp RIGHT               &kp BSPC          &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                      &kp DOWN   &kp UP       &mod_AT_PCT  &mod_Astx_Car  &mo 1
+&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LP_3  &mod_LBRC_4  &mod_Hash_5  &none                                                            &mo 2              &mod_Amp_6  &mod_RBRC_7  &mod_RP_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
+&kp TAB    &kp Q        &kp W        &kp E      &kp R        &kp T        &none                                                            &none              &kp Y       &kp U        &kp I      &kp O        &kp P          &kp BSLH
+&kp ESC    &kp A        &kp S        &kp D      &kp F        &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J        &kp K      &kp L        &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z        &kp X        &kp C      &kp V        &kp B                                     &kp HOME      &kp PG_UP                                &kp N       &kp M        &kp COMMA  &kp DOT      &kp FSLH       &kp RSHFT
+&mo 1      &kp GRAVE    &none        &kp LEFT   &kp RIGHT                 &kp BSPC          &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                      &kp DOWN     &kp UP     &mod_AT_PCT  &mod_Astx_Car  &mo 1
             >;
         };
 
