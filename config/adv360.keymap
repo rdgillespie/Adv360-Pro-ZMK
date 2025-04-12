@@ -19,6 +19,114 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        mod_bang_1: mod_bang_1 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_BANG_1";
+            bindings = <&kp EXCLAMATION>, <&kp KP_NUMBER_1>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_LBkt_2: mod_LBkt_2 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_LBKT_2";
+            bindings = <&kp LBKT>, <&kp KP_NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_LBRC_3: mod_LBRC_3 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_LBRC_3";
+            bindings = <&kp LEFT_BRACE>, <&kp KP_NUMBER_3>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_LP_4: mod_LP_4 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_LP_4";
+            bindings = <&kp LEFT_PARENTHESIS>, <&kp KP_NUMBER_4>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_Hash_5: mod_Hash_5 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_HASH_5";
+            bindings = <&kp POUND>, <&kp KP_NUMBER_5>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_Amp_6: mod_Amp_6 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_AMP_6";
+            bindings = <&kp AMPERSAND>, <&kp KP_NUMBER_6>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_RP_7: mod_RP_7 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_RP_7";
+            bindings = <&kp RIGHT_PARENTHESIS>, <&kp KP_NUMBER_7>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_RBRC_8: mod_RBRC_8 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_RBRC_8";
+            bindings = <&kp RIGHT_BRACE>, <&kp KP_NUMBER_8>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_RBKT_9: mod_RBKT_9 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_RBKT_9";
+            bindings = <&kp RIGHT_BRACKET>, <&kp KP_NUMBER_9>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_Dol_0: mod_Dol_0 {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_DOL_0";
+            bindings = <&kp DOLLAR>, <&kp KP_NUMBER_0>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_AT_PCT: mod_AT_PCT {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_AT_PCT";
+            bindings = <&kp AT_SIGN>, <&kp PERCENT>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mod_Astx_Car: mod_Astx_Car {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_ASTX_CAR";
+            bindings = <&kp ASTERISK>, <&kp CARET>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -27,11 +135,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &kp N1     &kp N2  &kp N3    &kp N4     &kp N5  &none                                                            &mo 2              &kp N6  &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
-&kp TAB    &kp Q      &kp W   &kp E     &kp R      &kp T   &none                                                            &none              &kp Y   &kp U     &kp I      &kp O     &kp P     &kp BSLH
-&kp ESC    &kp A      &kp S   &kp D     &kp F      &kp G   &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(LC(RIGHT))  &kp H   &kp J     &kp K      &kp L     &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z      &kp X   &kp C     &kp V      &kp B                                &kp HOME      &kp PG_UP                                &kp N   &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
-&mo 1      &kp GRAVE  &none   &kp LEFT  &kp RIGHT          &kp BSPC          &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                  &kp DOWN  &kp UP     &kp LBKT  &kp RBKT  &mo 1
+&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LBRC_3  &mod_LP_4  &mod_Hash_5  &none                                                            &mo 2              &mod_Amp_6  &mod_RP_7  &mod_RBRC_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
+&kp TAB    &kp Q        &kp W        &kp E        &kp R      &kp T        &none                                                            &none              &kp Y       &kp U      &kp I        &kp O        &kp P          &kp BSLH
+&kp ESC    &kp A        &kp S        &kp D        &kp F      &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J      &kp K        &kp L        &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z        &kp X        &kp C        &kp V      &kp B                                     &kp HOME      &kp PG_UP                                &kp N       &kp M      &kp COMMA    &kp DOT      &kp FSLH       &kp RSHFT
+&mo 1      &kp GRAVE    &none        &kp LEFT     &kp RIGHT               &kp BSPC          &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                      &kp DOWN   &kp UP       &mod_AT_PCT  &mod_Astx_Car  &mo 1
             >;
         };
 
