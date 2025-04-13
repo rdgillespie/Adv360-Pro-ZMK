@@ -127,6 +127,15 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        mod_BS_Del: mod_BS_Del {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MOD_BS_DEL";
+            bindings = <&kp BACKSPACE>, <&kp DEL>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     keymap {
@@ -135,11 +144,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LP_3  &mod_LBRC_4  &mod_Hash_5  &none                                                            &mo 2              &mod_Amp_6  &mod_RBRC_7  &mod_RP_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
-&kp TAB    &kp Q        &kp W        &kp E      &kp R        &kp T        &none                                                            &none              &kp Y       &kp U        &kp I      &kp O        &kp P          &kp BSLH
-&kp ESC    &kp A        &kp S        &kp D      &kp F        &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI   &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J        &kp K      &kp L        &kp SEMI       &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C      &kp V        &kp B                                     &kp HOME      &kp PG_UP                                &kp N       &kp M        &kp COMMA  &kp DOT      &kp FSLH       &kp RSHFT
-&mo 1      &kp GRAVE    &none        &kp LEFT   &kp RIGHT                 &kp BSPC          &kp DEL    &kp END       &kp PG_DN  &kp ENTER  &kp SPACE                      &kp DOWN     &kp UP     &mod_AT_PCT  &mod_Astx_Car  &mo 1
+&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LP_3  &mod_LBRC_4  &mod_Hash_5  &none                                                           &mo 2              &mod_Amp_6  &mod_RBRC_7  &mod_RP_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
+&kp TAB    &kp Q        &kp W        &kp E      &kp R        &kp T        &none                                                           &none              &kp Y       &kp U        &kp I      &kp O        &kp P          &kp BSLH
+&kp ESC    &kp A        &kp S        &kp D      &kp F        &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J        &kp K      &kp L        &kp SEMI       &kp SQT
+&kp LSHFT  &kp Z        &kp X        &kp C      &kp V        &kp B                                     &kp HOME      &none                                   &kp N       &kp M        &kp COMMA  &kp DOT      &kp FSLH       &kp RSHFT
+&mo 1      &kp GRAVE    &none        &none      &none                     &mod_BS_Del       &mo 7      &kp END       &none     &kp ENTER  &kp SPACE                      &none        &none      &mod_AT_PCT  &mod_Astx_Car  &mo 1
             >;
         };
 
@@ -183,6 +192,16 @@
         extra4 {
             display-name = "Yellow";
             status = "reserved";
+        };
+
+        Navigation {
+            bindings = <
+&trans  &trans  &trans  &trans         &trans  &trans  &trans                                      &trans  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans         &trans  &trans  &trans                                      &trans  &trans          &kp PAGE_UP     &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &kp PAGE_DOWN  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &trans  &trans  &trans         &trans  &trans                  &trans      &trans                  &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans  &trans  &trans         &trans          &trans  &trans  &trans      &trans  &trans  &trans                  &trans          &trans        &trans           &trans  &trans
+            >;
         };
     };
 };
