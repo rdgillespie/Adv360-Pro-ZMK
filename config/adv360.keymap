@@ -144,11 +144,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp EQUAL  &mod_bang_1  &mod_LBkt_2  &mod_LP_3  &mod_LBRC_4  &mod_Hash_5  &none                                                           &mo 3              &mod_Amp_6  &mod_RBRC_7  &mod_RP_8  &mod_RBKT_9  &mod_Dol_0     &kp MINUS
-&kp TAB    &kp Q        &kp W        &kp E      &kp R        &kp T        &none                                                           &none              &kp Y       &kp U        &kp I      &kp O        &kp P          &kp BSLH
-&kp ESC    &kp A        &kp S        &kp D      &kp F        &kp G        &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &kp LG(LC(RIGHT))  &kp H       &kp J        &kp K      &kp L        &kp SEMI       &kp SQT
-&kp LSHFT  &kp Z        &kp X        &kp C      &kp V        &kp B                                     &kp HOME      &none                                   &kp N       &kp M        &kp COMMA  &kp DOT      &kp FSLH       &kp RSHFT
-&mo 2      &kp GRAVE    &none        &none      &none                     &mod_BS_Del       &mo 1      &kp END       &none     &kp ENTER  &kp SPACE                      &none        &none      &mod_AT_PCT  &mod_Astx_Car  &mo 2
+&kp EQUAL  &kp N1     &kp N2  &kp N3  &kp N4  &kp N5  &none                                                           &mo 3              &kp N6  &kp N7  &kp N8     &kp N9            &kp N0             &kp MINUS
+&kp TAB    &kp Q      &kp W   &kp E   &kp R   &kp T   &none                                                           &none              &kp Y   &kp U   &kp I      &kp O             &kp P              &kp BSLH
+&kp ESC    &kp A      &kp S   &kp D   &kp F   &kp G   &kp LG(LC(LEFT))  &kp LCTRL  &kp LALT      &kp LGUI  &kp RCTRL  &kp LG(LC(RIGHT))  &kp H   &kp J   &kp K      &kp L             &kp SEMI           &kp SQT
+&kp LSHFT  &kp Z      &kp X   &kp C   &kp V   &kp B                                &kp HOME      &none                                   &kp N   &kp M   &kp COMMA  &kp DOT           &kp FSLH           &kp RSHFT
+&mo 2      &kp GRAVE  &none   &none   &none           &mod_BS_Del       &mo 1      &kp END       &none     &kp ENTER  &kp SPACE                  &none   &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mo 2
             >;
         };
 
